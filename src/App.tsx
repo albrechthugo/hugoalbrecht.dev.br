@@ -1,7 +1,15 @@
 import React from 'react';
+import useTheme from './hooks/useTheme';
+import ThemeProvider from './providers/ThemeProvider';
 
 function App() {
-  return <h1>A long time ago, in a galaxy far, far away...</h1>;
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <ThemeProvider>
+      <h1 style={{ color: theme.text }}>A long time ago...</h1>
+    </ThemeProvider>
+  );
 }
 
 export default App;
