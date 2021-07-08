@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { themes } from '../shared/themes/themes';
+import { themes } from '../shared/mocks/themes';
 
 type Props = {
   children: React.ReactNode;
