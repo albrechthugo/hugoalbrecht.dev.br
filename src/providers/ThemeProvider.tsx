@@ -1,13 +1,13 @@
 import React, { createContext, useState } from 'react';
-import { themes } from '../shared/mocks/themes';
-
-type Props = {
-  children: React.ReactNode;
-};
+import { themes } from '../styles/themes';
+import { Props } from '../types/types';
 
 type ThemeType = {
   background: string;
   text: string;
+  border: string;
+  primary: string;
+  isDark: boolean;
 };
 
 type ThemeContext = {
