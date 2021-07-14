@@ -22,7 +22,7 @@ const DEFAULT_VALUE: ThemeContext = {
 
 export const ThemeContext = createContext<ThemeContext>(DEFAULT_VALUE);
 
-export default function ThemeProvider(props: Props) {
+const ThemeProvider = (props: Props) => {
   const [theme, setTheme] = useState(DEFAULT_VALUE.theme);
 
   return (
@@ -30,4 +30,6 @@ export default function ThemeProvider(props: Props) {
       {props.children}
     </ThemeContext.Provider>
   );
-}
+};
+
+export default ThemeProvider;

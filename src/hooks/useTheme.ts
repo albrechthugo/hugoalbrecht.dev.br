@@ -1,8 +1,10 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../providers/ThemeProvider';
 
-export default function useTheme() {
+const useTheme = () => {
   const context = useContext(ThemeContext);
   const { theme, setTheme } = context;
   return { theme, setTheme };
-}
+};
+
+export default useTheme;
