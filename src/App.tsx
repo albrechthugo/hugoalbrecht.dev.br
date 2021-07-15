@@ -4,18 +4,21 @@ import LanguageProvider from './providers/LanguageProvider';
 import ThemeProvider from './providers/ThemeProvider';
 import { Routes } from './routes';
 import { GlobalStyles } from './styles/global';
+import Theme from './components/Theme/index';
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <LanguageProvider>
       <ThemeProvider>
         <GlobalStyles />
-        <Container>
-          <Routes />
-        </Container>
+        <Theme>
+          <Container>
+            <Routes />
+          </Container>
+        </Theme>
       </ThemeProvider>
     </LanguageProvider>
   );
-}
+};
 
 export default App;

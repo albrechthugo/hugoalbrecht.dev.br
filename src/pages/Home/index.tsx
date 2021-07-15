@@ -1,12 +1,10 @@
 import React from 'react';
-import useLanguage from '../../hooks/useLanguage';
+import AboutMe from '../../components/AboutMe/index';
 
 const Home = (): JSX.Element => {
-  const { language } = useLanguage();
-
   return (
     <>
-      <h1>{language.teste}</h1>
+      <AboutMe />
     </>
   );
 };

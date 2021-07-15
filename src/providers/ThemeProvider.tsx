@@ -22,12 +22,12 @@ const DEFAULT_VALUE: ThemeContext = {
 
 export const ThemeContext = createContext<ThemeContext>(DEFAULT_VALUE);
 
-const ThemeProvider = (props: Props) => {
+const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState(DEFAULT_VALUE.theme);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      {props.children}
+      {children}
     </ThemeContext.Provider>
   );
 };

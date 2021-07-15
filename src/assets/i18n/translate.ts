@@ -1,12 +1,12 @@
 const literals = {
   ptBr: {
-    teste: 'oieeee',
+    name: 'Hugo Andreas Albrecht',
   },
   enUs: {
-    teste: 'helloooo',
+    name: 'Hugo Andreas Albrecht',
   },
   es: {
-    teste: 'hola que tal',
+    name: 'Hugo Andreas Albrecht',
   },
 };
 

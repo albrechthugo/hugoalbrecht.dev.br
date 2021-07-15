@@ -9,7 +9,7 @@ const SideBar = (): JSX.Element => {
   const { theme } = useTheme();
 
   return (
-    <S.SideBarWrapper theme={theme}>
+    <S.SideBarWrapper>
       <S.IconsWrapper>
         <HomeIcon size={40} color={theme.primary} />
         <LightIcon size={40} color={theme.border} />

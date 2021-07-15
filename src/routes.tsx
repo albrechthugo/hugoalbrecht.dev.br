@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 
-export function Routes() {
+export const Routes = (): JSX.Element => {
   return (
     <Router>
       <Switch>
@@ -10,4 +10,4 @@ export function Routes() {
       </Switch>
     </Router>
   );
-}
+};

@@ -1,17 +1,14 @@
 import React from 'react';
-import useTheme from '../../hooks/useTheme';
 import { Props } from '../../types/types';
 import SideBar from '../SideBar';
 import * as S from './styles';
 
-const Container = (props: Props): JSX.Element => {
-  const { theme } = useTheme();
-
+const Container = ({ children }: Props): JSX.Element => {
   return (
     <>
-      <S.Wrapper theme={theme}>
+      <S.Wrapper>
         <SideBar />
-        {props.children}
+        {children}
       </S.Wrapper>
     </>
   );

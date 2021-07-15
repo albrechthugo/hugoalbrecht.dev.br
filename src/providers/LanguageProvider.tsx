@@ -14,12 +14,12 @@ const DEFAULT_VALUE: LanguageContext = {
 
 export const LanguageContext = createContext<LanguageContext>(DEFAULT_VALUE);
 
-const LanguageProvider = (props: Props) => {
+const LanguageProvider = ({ children }: Props) => {
   const [language, setLanguage] = useState(DEFAULT_VALUE.language);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      {props.children}
+      {children}
     </LanguageContext.Provider>
   );
 };
