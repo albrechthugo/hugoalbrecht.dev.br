@@ -5,7 +5,7 @@ import { BiHomeAlt as HomeIcon } from 'react-icons/bi';
 import { MdLanguage as LanguageIcon } from 'react-icons/md';
 import { HiOutlineLightBulb as LightIcon } from 'react-icons/hi';
 
-const SideBar = () => {
+const SideBar = (): JSX.Element => {
   const { theme } = useTheme();
 
   return (

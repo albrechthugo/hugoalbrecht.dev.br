@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from './components/Container';
 import LanguageProvider from './providers/LanguageProvider';
 import ThemeProvider from './providers/ThemeProvider';
 import { Routes } from './routes';
@@ -9,7 +10,9 @@ function App() {
     <LanguageProvider>
       <ThemeProvider>
         <GlobalStyles />
-        <Routes />
+        <Container>
+          <Routes />
+        </Container>
       </ThemeProvider>
     </LanguageProvider>
   );
