@@ -6,7 +6,7 @@ import { Routes } from './routes';
 import { GlobalStyles } from './styles/global';
 import Theme from './components/Theme/index';
 
-const App = (): JSX.Element => {
+const App: React.FC = (): JSX.Element => {
   return (
     <LanguageProvider>
       <ThemeProvider>

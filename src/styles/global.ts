@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   *,
   button,
   input {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     border: 0;
     outline: 0;
   }

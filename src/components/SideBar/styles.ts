@@ -11,6 +11,8 @@ export const SideBarWrapper = styled.aside`
     height: 8rem;
     border-top: 0.1rem solid ${props => props.theme.border};
     border-right: none;
+    position: fixed;
+    bottom: 0;
   }
 `;
 

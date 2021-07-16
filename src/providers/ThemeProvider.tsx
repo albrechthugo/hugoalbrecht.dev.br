@@ -4,6 +4,7 @@ import { Props } from '../types/types';
 
 type ThemeType = {
   background: string;
+  highlightText: string;
   text: string;
   border: string;
   primary: string;

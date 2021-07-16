@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 
-export const Routes = (): JSX.Element => {
+export const Routes: React.FC = (): JSX.Element => {
   return (
     <Router>
       <Switch>

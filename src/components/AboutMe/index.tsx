@@ -1,11 +1,21 @@
 import React from 'react';
+import useLanguage from '../../hooks/useLanguage';
 import * as S from './styles';
+import avatar from '../../assets/images/avatar.png';
+import SocialMedia from '../SocialMedia/index';
 
-const AboutMe = (): JSX.Element => {
+const AboutMe: React.FC = (): JSX.Element => {
+  const { language } = useLanguage();
+
   return (
     <>
       <S.Container>
-        <S.Name>Oi</S.Name>
+        <S.Avatar src={avatar} />
+        <S.Name>{language.name}</S.Name>
+        <S.Dot />
+        <S.Description>{language.description}</S.Description>
+        <S.Dot />
+        <SocialMedia />
       </S.Container>
     </>
   );
