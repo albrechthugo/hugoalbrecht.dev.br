@@ -8,6 +8,7 @@ const literals = {
     english: 'Inglês',
     espanhol: 'Espanhol',
     portugues: 'Português (PT-BR)',
+    apply: 'Aplicar',
   },
   enUs: {
     name: 'Hugo Andreas Albrecht',
@@ -18,6 +19,7 @@ const literals = {
     english: 'English',
     espanhol: 'Spanish',
     portugues: 'Portuguese (PT-BR)',
+    apply: 'Apply',
   },
   es: {
     name: 'Hugo Andreas Albrecht',
@@ -28,6 +30,7 @@ const literals = {
     english: 'Inglés',
     espanhol: 'Español',
     portugues: 'Portugués (PT-BR)',
+    apply: 'Aplicar',
   },
 };
 

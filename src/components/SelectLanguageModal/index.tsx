@@ -1,5 +1,6 @@
 import React from 'react';
 import useLanguage from '../../hooks/useLanguage';
+import SelectLanguageForm from '../SelectLanguageForm/index';
 import * as S from './styles';
 
 const SelectLanguageModal: React.FC = (): JSX.Element => {
@@ -15,7 +16,8 @@ const SelectLanguageModal: React.FC = (): JSX.Element => {
           </S.ModalHeader>
 
           <S.ModalBody>
-            <h1>ModalBody</h1>
+            <SelectLanguageForm />
+            <S.ModalSaveButton>{language.apply}</S.ModalSaveButton>
           </S.ModalBody>
         </S.ModalInfoWrapper>
       </S.ModalContainer>
