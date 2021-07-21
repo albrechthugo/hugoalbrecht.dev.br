@@ -1,23 +1,39 @@
 import React from 'react';
 import useLanguage from '../../hooks/useLanguage';
+import useModal from '../../hooks/useModal';
 import SelectLanguageForm from '../SelectLanguageForm/index';
 import * as S from './styles';
 
-const SelectLanguageModal: React.FC = (): JSX.Element => {
+type ModalProps = {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const SelectLanguageModal: React.FC<ModalProps> = ({
+  isOpen,
+  setIsOpen,
+}: ModalProps): JSX.Element => {
   const { language } = useLanguage();
+
+  const handleChangeLanguage = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
-      <S.ModalContainer>
+      <S.ModalContainer isOpen={isOpen}>
         <S.ModalInfoWrapper>
           <S.ModalHeader>
             <S.ModalTitle>{language.chooseLanguage}</S.ModalTitle>
-            <S.ModalCloseButton />
+            <S.ModalCloseButton onClick={() => setIsOpen(false)} />
           </S.ModalHeader>
 
           <S.ModalBody>
             <SelectLanguageForm />
-            <S.ModalSaveButton>{language.apply}</S.ModalSaveButton>
+
+            <S.ModalSaveButton onClick={() => handleChangeLanguage()}>
+              {language.apply}
+            </S.ModalSaveButton>
           </S.ModalBody>
         </S.ModalInfoWrapper>
       </S.ModalContainer>

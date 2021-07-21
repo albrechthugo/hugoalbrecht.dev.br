@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ModalContainer = styled.main`
+export const ModalContainer = styled('main')<{ isOpen: boolean }>`
   width: 100%;
   height: 100%;
   position: fixed;
@@ -9,10 +9,16 @@ export const ModalContainer = styled.main`
   bottom: 0;
   left: 0;
   right: 0;
-  visibility: visible;
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+
+  ${({ isOpen }) =>
+    isOpen &&
+    `
+    visibility: visible;
+  `}
 `;
 
 export const ModalInfoWrapper = styled.div`

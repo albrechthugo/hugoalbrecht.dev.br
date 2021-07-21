@@ -1,9 +1,8 @@
 import React from 'react';
-import useLanguage from '../../hooks/useLanguage';
-import * as S from './styles';
 import avatar from '../../assets/images/avatar.png';
+import useLanguage from '../../hooks/useLanguage';
 import SocialMedia from '../SocialMedia/index';
-import SelectLanguageModal from '../SelectLanguageModal/index';
+import * as S from './styles';
 
 const AboutMe: React.FC = (): JSX.Element => {
   const { language } = useLanguage();
@@ -11,7 +10,6 @@ const AboutMe: React.FC = (): JSX.Element => {
   return (
     <>
       <S.Container>
-        <SelectLanguageModal />
         <S.Avatar src={avatar} />
         <S.Name>{language.name}</S.Name>
         <S.Dot />
