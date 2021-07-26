@@ -1,21 +1,19 @@
 import React from 'react';
-import * as S from './styles';
-import {
-  GrInstagram as InstaIcon,
-  GrLinkedin as LinkedinIcon,
-  GrGithub as GithubIcon,
-} from 'react-icons/gr';
+import { iconsPath } from '../../assets/icons/icons';
 import useTheme from '../../hooks/useTheme';
+import SvgIcon from '../SvgIcon';
+import * as S from './styles';
 
 const SocialMedia: React.FC = (): JSX.Element => {
   const { theme } = useTheme();
+  const { instagram, linkedin, github } = iconsPath;
 
   return (
     <>
       <S.SocialMediaContainer>
-        <InstaIcon size={26} color={theme.text} />
-        <LinkedinIcon size={26} color={theme.text} />
-        <GithubIcon size={26} color={theme.text} />
+        <SvgIcon path={instagram} fill={theme.border} />
+        <SvgIcon path={github} fill={theme.border} />
+        <SvgIcon path={linkedin} fill={theme.border} />
       </S.SocialMediaContainer>
     </>
   );
