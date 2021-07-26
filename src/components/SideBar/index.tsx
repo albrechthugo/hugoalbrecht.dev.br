@@ -1,14 +1,14 @@
 import React from 'react';
+import { iconsPath } from '../../assets/icons/icons';
 import useModal from '../../hooks/useModal';
 import useTheme from '../../hooks/useTheme';
 import SelectLanguageModal from '../SelectLanguageModal';
 import SvgIcon from '../SvgIcon/index';
-import { iconsPath } from '../../assets/icons/icons';
 import * as S from './styles';
 
 const SideBar: React.FC = (): JSX.Element => {
-  const { theme } = useTheme();
-  const { isOpen, toggleModal, setIsOpen } = useModal();
+  const { theme, toggleTheme } = useTheme();
+  const { isOpen, toggleModal } = useModal();
   const { home, lightOn, lightOff, language } = iconsPath;
 
   return (
@@ -27,6 +27,7 @@ const SideBar: React.FC = (): JSX.Element => {
             fill={theme.border}
             width={'30'}
             height={'30'}
+            onClickAction={toggleTheme}
           />
 
           <SvgIcon
@@ -39,7 +40,7 @@ const SideBar: React.FC = (): JSX.Element => {
         </S.IconsWrapper>
       </S.SideBarWrapper>
 
-      <SelectLanguageModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <SelectLanguageModal isOpen={isOpen} setIsOpen={toggleModal} />
     </>
   );
 };
