@@ -3,14 +3,20 @@ import useLanguage from '../../hooks/useLanguage';
 import RadioInput from '../RadioInput/index';
 import * as S from './styles';
 
-const SelectLanguageForm: React.FC = (): JSX.Element => {
-  const { language } = useLanguage();
+type SelectLanguageFormProps = {
+  handleSelectLanguage: React.Dispatch<React.SetStateAction<string>>;
+};
 
-  const handleSelectLanguage = (e: any) => {};
+const SelectLanguageForm: React.FC<SelectLanguageFormProps> = ({
+  handleSelectLanguage,
+}: SelectLanguageFormProps): JSX.Element => {
+  const { language } = useLanguage();
 
   return (
     <>
-      <S.FormContainer onChange={e => handleSelectLanguage(e)}>
+      <S.FormContainer
+        onChange={(e: any) => handleSelectLanguage(e.target.value)}
+      >
         <RadioInput name="language" label={language.portugues} value="ptBr" />
         <RadioInput name="language" label={language.english} value="enUs" />
         <RadioInput name="language" label={language.espanhol} value="es" />

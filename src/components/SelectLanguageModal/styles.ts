@@ -13,6 +13,7 @@ export const ModalContainer = styled('main')<{ isOpen: boolean }>`
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  z-index: 1;
 
   ${({ isOpen }) =>
     isOpen &&
@@ -24,6 +25,7 @@ export const ModalContainer = styled('main')<{ isOpen: boolean }>`
 export const ModalInfoWrapper = styled.div`
   width: 50rem;
   height: 25rem;
+  z-index: 2;
   background-color: #fffbfc;
   border-radius: 0.5rem;
   border: 1px solid ${props => props.theme.border};
