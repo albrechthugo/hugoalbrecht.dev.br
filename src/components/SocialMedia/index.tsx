@@ -11,9 +11,29 @@ const SocialMedia = (): JSX.Element => {
   return (
     <>
       <S.SocialMediaContainer>
-        <SvgIcon path={instagram} fill={theme.border} />
-        <SvgIcon path={github} fill={theme.border} />
-        <SvgIcon path={linkedin} fill={theme.border} />
+        <a
+          href="https://www.instagram.com/hugoandreass/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SvgIcon path={instagram} fill={theme.border} />
+        </a>
+
+        <a
+          href="https://www.github.com/albrechthugo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SvgIcon path={github} fill={theme.border} />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/albrechthugo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SvgIcon path={linkedin} fill={theme.border} />
+        </a>
       </S.SocialMediaContainer>
     </>
   );
