@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../../assets/images/avatar.png';
+import avatar from '../../assets/images/avatar.jpg';
 import useLanguage from '../../hooks/useLanguage';
 import SocialMedia from '../SocialMedia/index';
 import * as S from './styles';
