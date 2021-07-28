@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { iconsPath } from '../../assets/icons/icons';
 import useModal from '../../hooks/useModal';
 import useTheme from '../../hooks/useTheme';
@@ -9,18 +10,20 @@ import * as S from './styles';
 const SideBar = (): JSX.Element => {
   const { theme, toggleTheme } = useTheme();
   const { isOpen, toggleModal } = useModal();
-  const { home, lightOn, lightOff, language } = iconsPath;
+  const { home, lightOn, lightOff, language, book } = iconsPath;
 
   return (
     <>
       <S.SideBarWrapper>
         <S.IconsWrapper>
-          <SvgIcon
-            path={home}
-            fill={theme.primary}
-            width={'30'}
-            height={'30'}
-          />
+          <Link to="/">
+            <SvgIcon
+              path={home}
+              fill={theme.primary}
+              width={'30'}
+              height={'30'}
+            />
+          </Link>
 
           <SvgIcon
             path={theme.isDark ? lightOn : lightOff}

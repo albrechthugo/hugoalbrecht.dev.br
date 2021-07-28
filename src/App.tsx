@@ -1,10 +1,9 @@
 import React from 'react';
-import Container from './components/Container';
+import Theme from './components/Theme/index';
 import LanguageProvider from './providers/LanguageProvider';
 import ThemeProvider from './providers/ThemeProvider';
 import { Routes } from './routes';
 import { GlobalStyles } from './styles/global';
-import Theme from './components/Theme/index';
 
 const App = (): JSX.Element => {
   return (
@@ -12,9 +11,7 @@ const App = (): JSX.Element => {
       <ThemeProvider>
         <GlobalStyles />
         <Theme>
-          <Container>
-            <Routes />
-          </Container>
+          <Routes />
         </Theme>
       </ThemeProvider>
     </LanguageProvider>

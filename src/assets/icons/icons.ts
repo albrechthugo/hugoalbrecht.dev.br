@@ -6,6 +6,7 @@ export type IconsProps = {
   github: string;
   instagram: string;
   linkedin: string;
+  book?: string;
 };
 
 export const iconsPath: IconsProps = {
