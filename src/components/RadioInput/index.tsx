@@ -7,11 +7,7 @@ type RadioInputProps = {
   value: string;
 };
 
-const RadioInput: React.FC<RadioInputProps> = ({
-  name,
-  label,
-  value,
-}: RadioInputProps): JSX.Element => {
+const RadioInput = ({ name, label, value }: RadioInputProps): JSX.Element => {
   return (
     <>
       <S.Label>

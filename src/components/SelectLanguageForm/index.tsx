@@ -7,7 +7,7 @@ type SelectLanguageFormProps = {
   handleSelectLanguage: React.Dispatch<React.SetStateAction<string>>;
 };
 
-const SelectLanguageForm: React.FC<SelectLanguageFormProps> = ({
+const SelectLanguageForm = ({
   handleSelectLanguage,
 }: SelectLanguageFormProps): JSX.Element => {
   const { language } = useLanguage();

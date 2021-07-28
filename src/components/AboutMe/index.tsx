@@ -4,7 +4,7 @@ import useLanguage from '../../hooks/useLanguage';
 import SocialMedia from '../SocialMedia/index';
 import * as S from './styles';
 
-const AboutMe: React.FC = (): JSX.Element => {
+const AboutMe = (): JSX.Element => {
   const { language } = useLanguage();
 
   return (

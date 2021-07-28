@@ -6,7 +6,7 @@ import SelectLanguageModal from '../SelectLanguageModal';
 import SvgIcon from '../SvgIcon/index';
 import * as S from './styles';
 
-const SideBar: React.FC = (): JSX.Element => {
+const SideBar = (): JSX.Element => {
   const { theme, toggleTheme } = useTheme();
   const { isOpen, toggleModal } = useModal();
   const { home, lightOn, lightOff, language } = iconsPath;

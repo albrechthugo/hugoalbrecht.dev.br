@@ -4,7 +4,7 @@ import useTheme from '../../hooks/useTheme';
 import SvgIcon from '../SvgIcon';
 import * as S from './styles';
 
-const SocialMedia: React.FC = (): JSX.Element => {
+const SocialMedia = (): JSX.Element => {
   const { theme } = useTheme();
   const { instagram, linkedin, github } = iconsPath;
 

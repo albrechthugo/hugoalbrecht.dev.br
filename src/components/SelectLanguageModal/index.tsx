@@ -9,7 +9,7 @@ type ModalProps = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const SelectLanguageModal: React.FC<ModalProps> = ({
+const SelectLanguageModal = ({
   isOpen,
   setIsOpen,
 }: ModalProps): JSX.Element => {

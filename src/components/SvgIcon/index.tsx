@@ -9,7 +9,7 @@ type SvgIconProps = {
   onClickAction?: () => void;
 };
 
-const SvgIcon: React.FC<SvgIconProps> = ({
+const SvgIcon = ({
   fill = '#000000',
   width = '26px',
   height = '26px',
