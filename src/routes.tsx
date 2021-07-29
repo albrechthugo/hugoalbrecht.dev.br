@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Container from './components/Container';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 export const Routes = (): JSX.Element => {
   return (
@@ -9,6 +10,7 @@ export const Routes = (): JSX.Element => {
       <Switch>
         <Container>
           <Route exact path="/" component={Home} />
+          <Route path="/projects" component={Projects} />
         </Container>
       </Switch>
     </Router>
