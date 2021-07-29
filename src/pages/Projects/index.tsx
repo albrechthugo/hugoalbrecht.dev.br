@@ -15,9 +15,11 @@ const Projects = (): JSX.Element => {
   const [projects, setProjects] = useState<ResponseProps[]>([]);
 
   useEffect(() => {
-    useHttp<ResponseProps[]>(config.apiUrl, HttpMethods.GET).then(res => {
-      setProjects(res.data);
-    });
+    useHttp<ResponseProps[]>(config.apiUrl, HttpMethods.GET)
+      .then(res => {
+        setProjects(res.data);
+      })
+      .catch(e => console.error(e));
   }, []);
 
   return (
