@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Container from './components/Container';
+import Loading from './components/Loading';
 
 export const Routes = (): JSX.Element => {
   const Home = lazy(() => import('./pages/Home/'));
@@ -9,7 +10,7 @@ export const Routes = (): JSX.Element => {
   return (
     <Router>
       <Switch>
-        <Suspense fallback={<h1>Carregando...</h1>}>
+        <Suspense fallback={<Loading />}>
           <Container>
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
