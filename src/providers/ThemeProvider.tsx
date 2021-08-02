@@ -1,4 +1,5 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 import { themes } from '../styles/themes';
 import { Props } from '../types/types';
 
@@ -16,15 +17,10 @@ type ThemeContext = {
   setTheme: React.Dispatch<React.SetStateAction<ThemeType>>;
 };
 
-const DEFAULT_VALUE: ThemeContext = {
-  theme: themes.dark,
-  setTheme: () => {},
-};
-
-export const ThemeContext = createContext<ThemeContext>(DEFAULT_VALUE);
+export const ThemeContext = createContext<ThemeContext>({} as ThemeContext);
 
 const ThemeProvider = ({ children }: Props) => {
-  const [theme, setTheme] = useState(DEFAULT_VALUE.theme);
+  const [theme, setTheme] = useLocalStorage<ThemeType>('theme', themes.dark);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
