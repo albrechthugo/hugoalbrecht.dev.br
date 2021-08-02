@@ -9,6 +9,9 @@ const literals = {
     espanhol: 'Espanhol',
     portugues: 'Português (PT-BR)',
     apply: 'Aplicar',
+    lastUpdate: 'Última atualização: ',
+    descriptionWasNotInformed: 'A descrição não foi informada.',
+    projects: 'Projetos',
   },
   enUs: {
     name: 'Hugo Andreas Albrecht',
@@ -20,6 +23,9 @@ const literals = {
     espanhol: 'Spanish',
     portugues: 'Portuguese (PT-BR)',
     apply: 'Apply',
+    lastUpdate: 'Last update: ',
+    descriptionWasNotInformed: 'The description was not informed.',
+    projects: 'Projects',
   },
   es: {
     name: 'Hugo Andreas Albrecht',
@@ -31,6 +37,9 @@ const literals = {
     espanhol: 'Español',
     portugues: 'Portugués (PT-BR)',
     apply: 'Aplicar',
+    lastUpdate: 'Última actualización: ',
+    descriptionWasNotInformed: 'La descripción no fue informada.',
+    projects: 'Proyectos',
   },
 };
 

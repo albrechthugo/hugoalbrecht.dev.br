@@ -10,7 +10,7 @@ import * as S from './styles';
 const SideBar = (): JSX.Element => {
   const { theme, toggleTheme } = useTheme();
   const { isOpen, toggleModal } = useModal();
-  const { home, lightOn, lightOff, language, book } = iconsPath;
+  const { home, lightOn, lightOff, language } = iconsPath;
 
   return (
     <>

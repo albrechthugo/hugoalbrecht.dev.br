@@ -9,6 +9,23 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+`;
+
+export const ProjectsTitle = styled.p`
+  color: ${props => props.theme.text};
+  font-size: 1.6rem;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    color: ${props => props.theme.highlightText};
+  }
 `;
 
 export const Avatar = styled.img`
@@ -16,6 +33,10 @@ export const Avatar = styled.img`
   height: 22rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
+
+  @media (max-width: 376px) {
+    margin-top: 6rem;
+  }
 `;
 
 export const Name = styled.h1`
