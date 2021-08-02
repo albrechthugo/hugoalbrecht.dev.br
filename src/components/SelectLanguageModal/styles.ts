@@ -28,7 +28,7 @@ export const ModalInfoWrapper = styled.div`
   z-index: 2;
   background-color: #fffbfc;
   border-radius: 0.5rem;
-  border: 1px solid ${props => props.theme.border};
+  border: 0.1rem solid ${props => props.theme.border};
 
   @media (max-width: 560px) {
     margin: 0 2rem;
@@ -75,7 +75,7 @@ export const ModalSaveButton = styled.button`
   width: 6rem;
   height: 3rem;
   background-color: ${props => props.theme.primary};
-  box-shadow: 1px 1px 1px ${props => props.theme.border};
+  box-shadow: 0.1rem 0.1rem 0.1rem ${props => props.theme.border};
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.3rem;
   position: absolute;

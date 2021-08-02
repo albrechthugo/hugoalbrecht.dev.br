@@ -10,7 +10,7 @@ export const Routes = (): JSX.Element => {
   return (
     <Router>
       <Switch>
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading isFullscreenLoading={true} />}>
           <Container>
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
