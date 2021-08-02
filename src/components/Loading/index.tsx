@@ -1,9 +1,11 @@
 import React from 'react';
 import * as S from './styles';
 
-const Loading = (): JSX.Element => {
+type LoadingProps = { isFullscreenLoading: boolean };
+
+const Loading = ({ isFullscreenLoading }: LoadingProps): JSX.Element => {
   return (
-    <S.LoadingContainer>
+    <S.LoadingContainer isFullscreenLoading={isFullscreenLoading}>
       <S.Spinner />
     </S.LoadingContainer>
   );

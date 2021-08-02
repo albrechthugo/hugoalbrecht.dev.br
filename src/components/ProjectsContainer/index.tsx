@@ -31,7 +31,7 @@ const ProjectsContainer = (): JSX.Element => {
     <>
       <S.ProjectsCardWrapper>
         {loading ? (
-          <Loading />
+          <Loading isFullscreenLoading={false} />
         ) : (
           projects?.map(project => (
             <ProjectCard

@@ -10,7 +10,9 @@ const rotate = keyframes`
   }
 `;
 
-export const LoadingContainer = styled.main`
+export const LoadingContainer = styled('main')<{
+  isFullscreenLoading: boolean;
+}>`
   position: fixed;
   left: 0;
   right: 0;
@@ -20,6 +22,12 @@ export const LoadingContainer = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${({ isFullscreenLoading }) =>
+    !isFullscreenLoading &&
+    `
+    left: 8rem;
+  `}
 `;
 
 export const Spinner = styled.div`
