@@ -5,6 +5,7 @@ export const SideBarWrapper = styled.aside`
   width: 8rem;
   grid-area: sidebar;
   border-right: 0.1rem solid ${props => props.theme.border};
+  z-index: 20;
 
   @media (max-width: 1000px) {
     width: 100%;
