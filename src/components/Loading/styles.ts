@@ -27,6 +27,11 @@ export const LoadingContainer = styled('main')<{
     !isFullscreenLoading &&
     `
     left: 8rem;
+
+    @media (max-width: 1000px) {
+      left: 0rem;
+      bottom: 8rem;
+    }
   `}
 `;
 
