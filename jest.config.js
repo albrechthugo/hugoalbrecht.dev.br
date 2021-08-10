@@ -6,7 +6,10 @@ module.exports = {
     'src/**/*.ts(x)?',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
+    '!src/routes.tsx',
+    '!src/helpers/**',
   ],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   moduleNameMapper: {
     '^styled-components':
