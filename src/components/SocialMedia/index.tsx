@@ -1,6 +1,6 @@
 import React from 'react';
 import { iconsPath } from '../../assets/icons/icons';
-import useTheme from '../../hooks/useTheme';
+import useTheme from '../../hooks/theme/useTheme';
 import SvgIcon from '../SvgIcon';
 import * as S from './styles';
 

@@ -7,7 +7,7 @@ module.exports = {
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
     '!src/routes.tsx',
-    '!src/helpers/**',
+    '!src/helpers/tests/**',
   ],
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],

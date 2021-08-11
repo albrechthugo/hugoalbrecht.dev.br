@@ -1,6 +1,6 @@
 import React from 'react';
 import literals from '../../assets/i18n/translate';
-import useLanguage, { Languages } from '../../hooks/useLanguage';
+import useLanguage, { Languages } from '../../hooks/language/useLanguage';
 import SelectLanguageForm from '../SelectLanguageForm/index';
 import * as S from './styles';
 

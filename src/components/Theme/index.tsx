@@ -1,7 +1,7 @@
 import React from 'react';
 import { Props } from '../../types/types';
 import { ThemeProvider } from 'styled-components';
-import useTheme from '../../hooks/useTheme';
+import useTheme from '../../hooks/theme/useTheme';
 
 const Theme = ({ children }: Props) => {
   const { theme } = useTheme();

@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { LanguageContext } from './../providers/LanguageProvider';
+import { LanguageContext } from '../../providers/LanguageProvider';
 
 export enum Languages {
   'ptBr' = 'ptBr',

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from '../ProjectCard';
-import useHttp, { HttpMethods } from '../../hooks/useHttp';
+import useHttp, { HttpMethods } from '../../hooks/http/useHttp';
 import { config } from '../../config';
 import * as S from './styles';
 import Loading from '../Loading';

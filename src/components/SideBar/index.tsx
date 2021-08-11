@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { iconsPath } from '../../assets/icons/icons';
-import useModal from '../../hooks/useModal';
-import useTheme from '../../hooks/useTheme';
+import useModal from '../../hooks/modal/useModal';
+import useTheme from '../../hooks/theme/useTheme';
 import SelectLanguageModal from '../SelectLanguageModal';
 import SvgIcon from '../SvgIcon/index';
 import * as S from './styles';
