@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardResponseProps } from '../ProjectsContainer';
-import transformDate from '../../helpers/transformDate';
+import transformDate from '../../helpers/date/transformDate';
 import * as S from './styles';
 import useLanguage from '../../hooks/useLanguage';
 

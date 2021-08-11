@@ -1,7 +1,7 @@
 import React from 'react';
 import SvgIcon from '.';
 import 'jest-styled-components';
-import { renderWithTheme } from '../../helpers/renderWithTheme';
+import { renderWithTheme } from '../../helpers/tests/renderWithTheme';
 
 describe('<SvgIcon />', () => {
   it('should render a svg icon with a black color and 26px of width and height by default', () => {

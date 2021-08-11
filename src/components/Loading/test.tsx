@@ -1,7 +1,7 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import 'jest-styled-components';
-import { renderWithTheme } from '../../helpers/renderWithTheme';
+import { renderWithTheme } from '../../helpers/tests/renderWithTheme';
 import Loading from '.';
 
 describe('<Loading />', () => {
