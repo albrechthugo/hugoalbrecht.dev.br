@@ -19,15 +19,15 @@ const SideBar = (): JSX.Element => {
           <Link to="/">
             <SvgIcon
               path={home}
-              fill={theme.primary}
+              fill={theme?.primary}
               width={'30'}
               height={'30'}
             />
           </Link>
 
           <SvgIcon
-            path={theme.isDark ? lightOn : lightOff}
-            fill={theme.border}
+            path={theme?.isDark ? lightOn : lightOff}
+            fill={theme?.border}
             width={'30'}
             height={'30'}
             onClickAction={toggleTheme}
@@ -35,7 +35,7 @@ const SideBar = (): JSX.Element => {
 
           <SvgIcon
             path={language}
-            fill={theme.border}
+            fill={theme?.border}
             width={'30'}
             height={'30'}
             onClickAction={toggleModal}

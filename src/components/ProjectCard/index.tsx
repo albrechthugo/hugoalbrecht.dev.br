@@ -11,7 +11,7 @@ const ProjectCard = ({
   updated_at,
 }: CardResponseProps): JSX.Element => {
   const { language } = useLanguage();
-  const shieldUrl = `https://img.shields.io/github/stars/albrechthugo/${'albrechthugo'}?style=social`;
+  const shieldUrl = `https://img.shields.io/github/stars/albrechthugo/albrechthugo?style=social`;
 
   return (
     <>

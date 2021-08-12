@@ -8,6 +8,8 @@ module.exports = {
     '!src/styles/**/*.ts',
     '!src/routes.tsx',
     '!src/helpers/tests/**',
+    '!src/services/api.ts',
+    '!src/assets/**',
   ],
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
