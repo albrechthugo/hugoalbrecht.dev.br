@@ -1,6 +1,6 @@
 import React from 'react';
 import { iconsPath } from '../../assets/icons/icons';
-import useTheme from '../../hooks/useTheme';
+import useTheme from '../../hooks/theme/useTheme';
 import SvgIcon from '../SvgIcon';
 import * as S from './styles';
 
@@ -16,7 +16,7 @@ const SocialMedia = (): JSX.Element => {
           target="_blank"
           rel="noreferrer"
         >
-          <SvgIcon path={instagram} fill={theme.border} />
+          <SvgIcon path={instagram} fill={theme?.border} />
         </a>
 
         <a
@@ -24,7 +24,7 @@ const SocialMedia = (): JSX.Element => {
           target="_blank"
           rel="noreferrer"
         >
-          <SvgIcon path={github} fill={theme.border} />
+          <SvgIcon path={github} fill={theme?.border} />
         </a>
 
         <a
@@ -32,7 +32,7 @@ const SocialMedia = (): JSX.Element => {
           target="_blank"
           rel="noreferrer"
         >
-          <SvgIcon path={linkedin} fill={theme.border} />
+          <SvgIcon path={linkedin} fill={theme?.border} />
         </a>
       </S.SocialMediaContainer>
     </>

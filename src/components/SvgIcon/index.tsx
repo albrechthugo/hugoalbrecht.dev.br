@@ -17,6 +17,7 @@ const SvgIcon = ({
   onClickAction,
 }: SvgIconProps) => (
   <S.Svg
+    name="svg"
     fill={fill}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"

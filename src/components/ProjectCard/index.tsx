@@ -1,8 +1,8 @@
 import React from 'react';
 import { CardResponseProps } from '../ProjectsContainer';
-import transformDate from '../../helpers/transformDate';
+import transformDate from '../../helpers/date/transformDate';
 import * as S from './styles';
-import useLanguage from '../../hooks/useLanguage';
+import useLanguage from '../../hooks/language/useLanguage';
 
 const ProjectCard = ({
   svn_url,
@@ -11,7 +11,7 @@ const ProjectCard = ({
   updated_at,
 }: CardResponseProps): JSX.Element => {
   const { language } = useLanguage();
-  const shieldUrl = `https://img.shields.io/github/stars/albrechthugo/${'albrechthugo'}?style=social`;
+  const shieldUrl = `https://img.shields.io/github/stars/albrechthugo/albrechthugo?style=social`;
 
   return (
     <>

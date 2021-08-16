@@ -29,7 +29,7 @@ export const LoadingContainer = styled('main')<{
     left: 8rem;
 
     @media (max-width: 1000px) {
-      left: 0rem;
+      left: 0;
       bottom: 8rem;
     }
   `}

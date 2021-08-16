@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
+import useLocalStorage from '../hooks/local-storage/useLocalStorage';
 import { themes } from '../styles/themes';
 import { Props } from '../types/types';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import avatar from '../../assets/images/avatar.jpg';
-import useLanguage from '../../hooks/useLanguage';
+import useLanguage from '../../hooks/language/useLanguage';
 import SocialMedia from '../SocialMedia/index';
 import * as S from './styles';
 
