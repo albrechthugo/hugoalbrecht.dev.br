@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { iconsPath } from '../../assets/icons/icons';
 import useModal from '../../hooks/modal/useModal';
 import useTheme from '../../hooks/theme/useTheme';
@@ -10,7 +10,8 @@ import * as S from './styles';
 const SideBar = (): JSX.Element => {
   const { theme, toggleTheme } = useTheme();
   const { isOpen, toggleModal } = useModal();
-  const { home, lightOn, lightOff, language } = iconsPath;
+  const { push } = useHistory();
+  const { home, lightOn, lightOff, language, projects } = iconsPath;
 
   return (
     <>
@@ -39,6 +40,14 @@ const SideBar = (): JSX.Element => {
             width={'30'}
             height={'30'}
             onClickAction={toggleModal}
+          />
+
+          <SvgIcon
+            path={projects}
+            fill={theme?.border}
+            width={'30'}
+            height={'30'}
+            onClickAction={() => push('/projects')}
           />
         </S.IconsWrapper>
       </S.SideBarWrapper>

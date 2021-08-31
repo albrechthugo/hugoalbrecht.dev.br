@@ -10,22 +10,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-`;
-
-export const ProjectsTitle = styled.p`
-  color: ${props => props.theme.text};
-  font-size: 1.6rem;
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  text-transform: uppercase;
-  transform: translateX(-50%);
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: underline;
-    color: ${props => props.theme.highlightText};
-  }
+  background-color: ${props => props.theme.background};
 `;
 
 export const Avatar = styled.img`
@@ -35,7 +20,7 @@ export const Avatar = styled.img`
   margin-bottom: 1.2rem;
 
   @media (max-width: 376px) {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 `;
 

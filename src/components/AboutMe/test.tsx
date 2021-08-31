@@ -16,37 +16,6 @@ describe('<AboutMe />', () => {
     expect(container.firstChild).toBeInTheDocument();
   });
 
-  it('should render projects title correctly', () => {
-    const { container } = renderWithTheme(
-      <BrowserRouter>
-        <AboutMe />
-      </BrowserRouter>
-    );
-
-    const projects = container.querySelector('p');
-    expect(projects).toHaveTextContent(/projetos/i);
-  });
-
-  it('should apply text underline and highlight color style when projects label is hovered', () => {
-    const { container } = renderWithTheme(
-      <BrowserRouter>
-        <AboutMe />
-      </BrowserRouter>
-    );
-
-    const projects = container.querySelector('p');
-
-    expect(projects).toHaveStyle({ color: '#8899a6' });
-
-    expect(projects).toHaveStyleRule('text-decoration', 'underline', {
-      modifier: ':hover',
-    });
-
-    expect(projects).toHaveStyleRule('color', '#FFFBFC', {
-      modifier: ':hover',
-    });
-  });
-
   it('should render name correctly', () => {
     const { container } = renderWithTheme(
       <BrowserRouter>
@@ -80,7 +49,7 @@ describe('<AboutMe />', () => {
       </BrowserRouter>
     );
 
-    expect(screen.getByRole('img')).toHaveStyleRule('margin-top', '6rem', {
+    expect(screen.getByRole('img')).toHaveStyleRule('margin-top', '3rem', {
       media: '(max-width: 376px)',
     });
   });

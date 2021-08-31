@@ -6,4 +6,5 @@ export const SocialMediaContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 2rem;
 `;
